@@ -1,5 +1,3 @@
-
-
 public class Student extends Person {
     private String university;
 
@@ -16,16 +14,14 @@ public class Student extends Person {
         this.university = university;
     }
 
-    // Extending functionality without violating LSP
-   
     public void introduce() {
         super.introduce();
         System.out.println("I study at " + university + ".");
     }
 
     public static void main(String[] args) {
-        Person person = new Person("Alice", 30);
-        Person student = new Student("Bob", 20, "Tech University");
+        Person person = new Person("Joy", 30);
+        Person student = new Student("James", 20, "Strathmore University");
 
         person.introduce();
         student.introduce();
